@@ -1,0 +1,14 @@
+def kiem_tra(n):
+   s = 0
+   for i in range (1, n):
+       if (n % i) == 0:
+           s += i
+   if s == n:
+       return True
+   else:
+       return False
+n = int(input("Nhap vao so nguyen n lon hon 0: "))
+if kiem_tra(n):
+   print(n," là số hoàn hảo " )
+else:
+   print(n," không là số hoàn hảo " )
