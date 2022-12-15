@@ -1,0 +1,12 @@
+import math
+a=int(input("Nhập cạnh thứ nhất: "))
+b=int(input("Nhập cạnh thứ hai: "))
+c=int(input("Nhập cạnh thứ ba: "))
+s=0
+if (a+b>c) and (a+c>b) and (b+c>a):
+    print(a,b,c,"là 3 cạnh của một tam giác")
+    p=(a+b+c)/2
+    s=math.sqrt(p*(p-a)*(p-b)*(p-c))
+    print("Diện tích của tam giác là:",s)
+else:
+    print(a,b,c,"không phải là 3 cạnh của một tam giác")
