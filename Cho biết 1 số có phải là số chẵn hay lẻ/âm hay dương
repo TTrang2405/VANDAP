@@ -1,0 +1,9 @@
+n=int(input("Nhập n: "))
+if(n % 2 == 0) and (n>0):
+print(n, "là số chẵn dương ")
+if (n % 2 == 0) and (n < 0):
+print(n, "là số chẵn âm")
+if (n % 2 != 0) and (n > 0):
+print(n, "là số lẻ dương ")
+if(n % 2 != 0) and (n < 0):
+print(n, "là số lẻ âm")
